@@ -1,0 +1,72 @@
+/* comienza el css para la seccion navegacion*/
+
+header{
+    background-color: lightslategray;
+    padding: 20px 0 ;
+}
+.caja{
+    width: 940px;      
+    position: relative; /*para centrar el navegador uso margin 0 y auto ,y position relative*/
+    margin: 0 auto;     
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;/* para dar margen entre los "a" de las listas */
+
+}
+nav a {
+    color: black;
+    text-transform: uppercase;/*para hacerlas mayusculas*/
+    font-weight: bold; /*para dar negrita a la letras*/
+    text-decoration: none;/*para sacar el surrayado*/
+    font-size: 22px;/*para dar el tamaño*/
+}
+nav a:hover{
+    color:orange;
+    text-decoration:underline;/*para surrayar una palabra*/
+}
+
+/*comienza css para la seccion productos */
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tarjeta{
+    display: inline-block;
+    margin:0 1.5%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 30%;
+    padding:30px 20px;
+    text-align: center;
+    vertical-align: top;
+    border: 2px solid black;
+    font-size: 25px;
+}
+h2{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.descripcion-p{
+    font-size: 18px;
+}
+.precio-p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.tarjeta:hover{/*cuando paso sobre el elemento se activa el color naranja con hover*/
+    border-color: orange;
+    font-size: 35px; /*aumentando el tamaño de las letras logramos en efecto de aumento de la tarjeta */
+}
+.tarjeta:active{/*cuando cliqueo el elemento se actiav el color verde con active*/
+    border-color: green;
+}
+
