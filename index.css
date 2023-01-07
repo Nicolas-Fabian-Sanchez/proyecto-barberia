@@ -32,7 +32,7 @@ nav a:hover{
 }
 
 /*comienza css para la seccion productos */
-.productos{
+.productos , .formulario{
     width: 940px;
     margin: 0 auto;
     padding: 20px;
@@ -69,4 +69,64 @@ h2{
 .tarjeta:active{/*cuando cliqueo el elemento se actiav el color verde con active*/
     border-color: green;
 }
+footer{
+    text-align: center;
+    background: url("./imagenes/bg.jpg");/* para ´poner una imagen de fondo se usa background y la url*/
+    padding: 40px;
+}
 
+.copyright{
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 15px;
+}
+
+/* comienza el css del formulario */
+
+label, legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 13px;
+}
+.input-padron{
+    display: block;
+    padding: 20 px 30 px;
+    margin: 0 0 17px;
+    width: 50% ;
+}
+.checkbox{
+    margin:20px 0 ;
+}
+.enviar{
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    padding: 20px 0 ;
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    font-size: 18px;
+    transition: 1s all;/* con transition lo que hago es programar el tiempo de una transicion , con el "all" hacemos que se active para todas */
+    cursor:pointer; /* cambiamos la flecha por la manito que apunta */
+}
+.enviar:hover{
+    /*font-size: 22px; con font-size podria hacer un aumento de tamaño , es una variable*/
+    background-color: darkgoldenrod;
+    transform: scale(1.2); /* con transform y la varaible "scale"hacemos que un elemento aumente de tamaño*/
+}
+
+table{
+    margin: 40px 40px;
+    
+}
+thead{
+    color: white;
+    font-weight: bold;
+    background-color: orange;
+}
+
+th,td{
+    border: 1px solid black;
+    padding: 15px 25px;
+}
