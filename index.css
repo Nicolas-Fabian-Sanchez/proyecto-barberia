@@ -97,6 +97,13 @@ label, legend {
     font-size: 20px;
     padding: 10px 0;
 }
+.contenedor{
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+}
 .input-padron{
     display: block;
     padding: 10px 20px;
