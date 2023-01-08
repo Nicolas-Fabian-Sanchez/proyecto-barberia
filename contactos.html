@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css"><!--para resetiar el css-->
     <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"><!--usamos la 
+    pagina google fonts para importar fuentes de letras y utilizarlas en la pagina y mejorarla -->
     <title>Contacto</title>
 </head>
 <body>
@@ -26,21 +28,21 @@
     <main class="formulario">
         <form>
 
-            <label for="nombreApellido"> nombre y apellido : 
+            <label for="nombreApellido"> Nombre y Apellido : 
                 <input type="text" id="nombreApellido"class="input-padron" required ><!--con required hacemos que el campo se obligatorio-->
             </label>  
-            <label for="correoElectronico">correo electronico: 
+            <label for="correoElectronico">Correo Electronico: 
                 <input type="email" id="correoElectronico" class="input-padron" required placeholder="email@hotmail.com"><!-- para pone run ejmeplo dentro del input usamos placeholder-->
             </label>
-            <label for="telefono"> telefono : 
+            <label for="telefono"> Telefono : 
                 <input type="tel" id="telefono"class="input-padron" required placeholder="+xx (x) xxxx xxxxxx">
             </label>
 
-            <label for="mensaje">deje su mensaje aqui:</label> 
+            <label for="mensaje">Deje su mensaje aqui:</label> 
             <textarea name="mensaje" id="" cols="70" rows="10" required></textarea>
             
             <fieldset><!--para agrupar elementos en un formulario usamos "fielset" y no "div" -->
-                <legend>¿como te gustaria que te contactemos?</legend><!--para poner una leyenda en un formulario usamos "legend" y no "p"-->
+                <legend>¿Como te gustaria que te contactemos?</legend><!--para poner una leyenda en un formulario usamos "legend" y no "p"-->
                 <label for="radio-email"><input type="radio"id="radio-emial"name="contacto"value="email">Email</label>
                 <label for="radio-telefono"><input type="radio"id="radio-telefono"name="contacto"value="telefono">Telefono</label>
                 <label for="radio-Whatssap"><input type="radio"id="radio-whatssap"name="contacto"value="whatssap" checked>Whatssap</label><!-- usamos checked
@@ -58,16 +60,16 @@
 
              <input type="submit" value="Enviar Formulario" class="enviar">
         </form>
-        <table>
-            <thead>
-                <tr>
-                    <th>Dias</th>
+        <table><!-- para ralizar una tabla se usa table-->
+            <thead><!-- el encabezado se marca con "thead"-->
+                <tr><!-- con "tr" hacemos las filas-->
+                    <th>Dias</th><!-- con "th" damos nombres a las columnas del encabezado-->
                     <th>Horarios</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody><!-- tbody lo usamos para señalar el cuepo de la tabla-->
                 <tr>
-                    <td>Lunes</td>
+                    <td >Lunes</td><!-- con "td" damos combre a las columnas del cuerpo de la tabla-->
                     <td>De 8 a 20 Hrs</td>
                 </tr>
                 <tr>

@@ -1,7 +1,13 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(white, grey);
+}
+
 /* comienza el css para la seccion navegacion*/
 
 header{
-    background-color: lightslategray;
+    background-color:rgb(170, 168, 168);
     padding: 20px 0 ;
 }
 .caja{
@@ -32,10 +38,11 @@ nav a:hover{
 }
 
 /*comienza css para la seccion productos */
-.productos , .formulario{
+.productos , .formulario ,.home{
     width: 940px;
     margin: 0 auto;
     padding: 20px;
+ 
 }
 
 .tarjeta{
@@ -49,6 +56,7 @@ nav a:hover{
     vertical-align: top;
     border: 2px solid black;
     font-size: 25px;
+    background-color: white;
 }
 h2{
     text-transform: capitalize;
@@ -87,14 +95,15 @@ footer{
 label, legend {
     display: block;
     font-size: 20px;
-    margin: 0 0 13px;
+    padding: 10px 0;
 }
 .input-padron{
     display: block;
-    padding: 20 px 30 px;
-    margin: 0 0 17px;
+    padding: 10px 20px;
+    margin: 10px 0;
     width: 50% ;
 }
+
 .checkbox{
     margin:20px 0 ;
 }
@@ -129,4 +138,62 @@ thead{
 th,td{
     border: 1px solid black;
     padding: 15px 25px;
+}
+/* comienza el css para la pagina index.html (home)*/
+.banner{
+    width: 100%;
+}
+.titulosSection{
+     text-align: center;
+     font-size: 25px;
+     font-weight: bold;
+     margin: 0 0 1em;
+}
+.utencillos{
+    width: 120px;
+    margin: 0 20px 20px 0;
+    float: left;/*para que se coloque a la izquierda de la pantalla */
+}
+p{
+    margin: 0 0 1em;
+    font-size: 18px;
+}
+
+em{
+    font-style: italic;
+}
+ strong{
+    font-weight: bold;
+}
+.center{
+    text-align: center;
+    margin: 25px;
+}
+.contenidoDifrenciales{
+    width: 640px;
+    margin: 0 auto;/*metodo para centrar los elementos recordar!!!!*/
+}
+.listaDifrenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;/*para colocar una lista en el rango superior de un contedido y de manera vertical*/
+    padding: 0 0 15px;
+    
+}
+.img-difrencial{
+    width:60%;
+    box-shadow:10px 10px 30px 15px #000000 ; /*se usa para dar sombras a la imagen o letras o cualquier elemento */
+    /* "opacity: ;" se utiliza para dar trasparencia o opacidad a un elemento recordar !!!*/
+}
+.items{
+    line-height: 1.5; /* el line-height nos permite dar espacion de linea */
+}
+ /* .items:first-child{ con firts-child le cambiamos la fuente a la primera linea de la lista, existe el last para la ultima
+    font-weight: bold;
+}*/
+.items:before{/*para colocar algun elemento antes que otro usamos el "before" (esta el after para colocar despues) */
+    content: "★";/*colocar un items o decoracion usamos el content, la estrela la saque de unicode recordar*/
+}
+.items:nth-child(1),.items:nth-child(3),.items:nth-child(5),.items:nth-child(7){/* con nth-child elegimos a que elemento cambiar*/
+    font-weight: bold;
 }
