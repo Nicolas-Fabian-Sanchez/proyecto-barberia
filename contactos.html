@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./index.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"><!--usamos la 
     pagina google fonts para importar fuentes de letras y utilizarlas en la pagina y mejorarla -->
+    <script src="https://kit.fontawesome.com/e1df93d5c0.js" crossorigin="anonymous"></script>
     <title>Contacto</title>
 </head>
 <body>
@@ -16,6 +17,7 @@
                 <img src="./imagenes/logo.png" alt="Logo Barberia Alura">
             </h1>
             <nav>
+                <div class="hamburguer"><i class="fa-solid fa-bars "></i></div>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./productos.html">Productos</a></li>
@@ -39,7 +41,7 @@
             </label>
 
             <label for="mensaje">Deje su mensaje aqui:</label> 
-            <textarea name="mensaje" id="" cols="70" rows="10" required></textarea>
+            <textarea name="mensaje" id="" cols="70" rows="10" required class="tamaño"></textarea>
             
             <fieldset><!--para agrupar elementos en un formulario usamos "fielset" y no "div" -->
                 <legend>¿Como te gustaria que te contactemos?</legend><!--para poner una leyenda en un formulario usamos "legend" y no "p"-->
@@ -87,6 +89,6 @@
         <img src="./imagenes/logo-blanco.png" alt="">
         <p class="copyright"> &copy Copyright Barberia Alura - 2020</p><!--&copi realizo el icono de copyright-->
     </footer>
-    
+    <script src="./index.js"></script>
 </body>
 </html>

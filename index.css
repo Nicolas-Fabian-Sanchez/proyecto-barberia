@@ -36,6 +36,14 @@ nav a:hover{
     color:orange;
     text-decoration:underline;/*para surrayar una palabra*/
 }
+.hamburguer{
+	display: none;
+	color: orange;
+	font-size: 2.5em;
+}
+.mostrar{
+    display: none;
+}
 
 /*comienza css para la seccion productos */
 .productos , .formulario ,.home{
@@ -203,4 +211,46 @@ em{
 }
 .items:nth-child(1),.items:nth-child(3),.items:nth-child(5),.items:nth-child(7){/* con nth-child elegimos a que elemento cambiar*/
     font-weight: bold;
+}
+
+/* comienza las medias queris */
+
+@media(max-width:900px){ 
+    h1{
+        text-align: center;
+        
+    }
+    nav{
+        position: static;
+    }
+    
+    .caja , .home , .titulosSection ,.productos , .tarjeta , .formulario , .tamaño {
+        width: auto;
+        
+    }
+    .listaDifrenciales ,.tamaño{
+        width: 100%;
+    }
+    .img-difrencial{
+        width: 50%;
+    }
+    p,.items , label , legend {
+        font-size: 16px;
+    }
+  
+    .hamburguer{
+		display:block;
+	}
+    ul{
+        display: none;
+    }
+    .mostrar{
+        display: block;
+    }
+    nav li {
+        display: block;
+    }
+
+
+
 }
